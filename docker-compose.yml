@@ -1,7 +1,7 @@
 ---
 services:
   ark-server:
-    image: ark-server-docker
+    image: indifferentbroccoli/ark-server-docker
     platform: linux/amd64
     build:
       context: .
