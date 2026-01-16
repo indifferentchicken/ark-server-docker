@@ -84,14 +84,8 @@ EOF
 
 # Install ARK server if it doesn't exist
 if [ ! -f "/home/steam/steamcmd/ark/ShooterGame/Binaries/Linux/ShooterGameServer" ]; then
-    echo "Installing ARK server..."
+    echo "Installing ARK server (this may take a while, downloading ~30GB)..."
     arkmanager install @main
-    
-    # Wait for installation to complete
-    while [ ! -f "/home/steam/steamcmd/ark/ShooterGame/Binaries/Linux/ShooterGameServer" ]; do
-        echo "Waiting for ARK server installation to complete..."
-        sleep 10
-    done
     echo "ARK server installation completed!"
 fi
 
