@@ -1,6 +1,10 @@
 #!/bin/bash
 
 echo "Starting ARK server with arkmanager..."
+echo "Environment variables:"
+echo "  QUERY_PORT=${QUERY_PORT}"
+echo "  SERVER_PORT=${SERVER_PORT}"
+echo "  RCON_PORT=${RCON_PORT}"
 
 # Create arkmanager configuration
 tee /etc/arkmanager/arkmanager.cfg > /dev/null << EOF
